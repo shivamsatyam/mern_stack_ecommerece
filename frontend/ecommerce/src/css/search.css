@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.search{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebe8e8;
+}
+.search_box{
+    display: flex;
+    width: 100%;
+    max-width: 799px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.search_input{
+
+}
+
+.search_input input{
+    width: 100vw;
+    max-width: 624px;
+    height: 35px;
+    font-family: cursive;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.search_btn{
+    width: 120px;
+    background-color: orange;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-family: system-ui;
+}

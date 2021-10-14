@@ -1,0 +1,51 @@
+.home_element{
+    margin-top: 31px;
+}
+.home_element_main{
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 2px solid;
+    max-width: 1388px;
+    margin: 1px auto;
+}
+.element{
+    border: 2px solid red;
+    width: fit-content;
+    margin: 11px 7px;
+    display: flex;
+    flex-direction: column;
+    padding: 1px 9px;
+}
+
+.element_image{
+
+}
+
+.element_image img{
+    border: 2px solid #ffc800;
+    width: 100%;
+    max-width: 315px;
+    height: 100%;
+    max-height: 310px;
+    object-fit: cover;
+}
+
+
+.element_name{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+.element_stars{
+
+}
+
+.element_price{
+
+}
+.element_price span{
+    color: red;
+    font-family: system-ui;
+}

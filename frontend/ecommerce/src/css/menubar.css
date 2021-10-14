@@ -1,0 +1,53 @@
+
+.hamburger{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+}
+
+.menubar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menubar_img{
+
+}
+.menubar_img img{
+    object-fit: contain;
+    width: 100%;
+    max-width: 427px;
+
+}
+
+.menubar_links{
+    width: 100%;
+    max-width: 303px;
+    display: flex;
+    justify-content: space-around;
+}
+.menubar_links a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+}
+
+.menubar_logo{
+    width: 100%;
+    max-width: 120px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menubar_logo img{
+
+}
