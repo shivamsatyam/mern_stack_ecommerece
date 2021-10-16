@@ -52,17 +52,17 @@ function MenuBar() {
         )}
       </div>
 
-      <div class="menubar" style={{ display: `${showMenu ? "flex" : "none"}` }}>
-        <div class="menubar_img">
+      <div className="menubar" style={{ display: `${showMenu ? "flex" : "none"}` }}>
+        <div className="menubar_img">
           <img src={ecommerce} alt="ecommerce" />
         </div>
 
-        <div class="menubar_links">
+        <div className="menubar_links">
           {menuData.map((item, index) => {
             return <a href={item.link}>{item.name}</a>;
           })}
         </div>
-        <div class="menubar_logo">
+        <div className="menubar_logo">
           <a href="/search">
             <AiOutlineSearch size={25} color={"black"} />
           </a>

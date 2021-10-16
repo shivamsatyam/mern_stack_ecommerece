@@ -1,22 +1,22 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import MenuBar from "../screens/MenuBar"
 import Login from "../components/Login"
-import Register  from '../components/Register'
-import "../css/register.css"
+import Register from '../components/Register'
+import "../css/contact.css"
 
 function Contact() {
-    const [loginColor,setLoginColor] = useState("black")
-    const [registerColor,setRegisterColor] = useState("orange")
-    const [showLogin,setShowLogin] = useState(false)
+    const [loginColor, setLoginColor] = useState("#fff")
+    const [registerColor, setRegisterColor] = useState("orange")
+    const [showLogin, setShowLogin] = useState(false)
 
-    const setLColor = ()=>{
+    const setLColor = () => {
         setLoginColor("orange")
-        setRegisterColor("black")
+        setRegisterColor("#fff")
         setShowLogin(!showLogin)
     }
 
-    const setRColor = ()=>{
-        setLoginColor("black")
+    const setRColor = () => {
+        setLoginColor("#fff")
         setRegisterColor("orange")
         setShowLogin(!showLogin)
     }
@@ -25,18 +25,24 @@ function Contact() {
         <>
             <MenuBar />
             <div className="contact">
-               <div className="contact_title">
-                   <div onClick={()=>setLColor()} style={{"color":{loginColor}}} className="contact_title_box" >
-                       Login
-                   </div>
-                   <div onClick={()=>setRColor()} style={{"color":{registerColor}}} className="contact_title_box" >
-                       Register
-                   </div>
-               </div>
+                <div className="contact_title">
+                    <div onClick={() => setLColor()} style={{ "borderBottom": `4px solid ${loginColor}` }} className="contact_title_box" >
+                        Login
+                    </div>
+                    <div onClick={() => setRColor()} style={{ "borderBottom": `4px solid ${registerColor}` }} className="contact_title_box" >
+                        Register
+                    </div>
 
-               {
-                   showLogin?<Login/>:<Register/>
-               }
+
+                </div>
+
+                <div className="contact_window">
+                    {
+                        showLogin ? <Login /> : <Register />
+                    }
+
+                </div>
+
 
             </div>
         </>
