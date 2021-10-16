@@ -6,7 +6,7 @@ function Login() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     return (
-        <div className="form">
+        <form className="form"  enctype="multipart/form-data">
             <div className="form_box">
                 <AiOutlineMail className="form_box_icon" size={25} />
                 <input placeholder="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
@@ -21,7 +21,7 @@ function Login() {
                 <button>Login</button>
             </div>
 
-        </div>
+        </form>
     )
 }
 
